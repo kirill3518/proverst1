@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.hidden {
+    position: absolute;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+.header {
+    background: #222222;
+    /* height: 75px; */
+    padding: 18px 0;
+    color: #fff;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-col-1 {
+    display: flex;
+    align-items: center;
+}
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 41px;
+}
+.search-button, .main-menu-button {
+    background-color: transparent;
+    border: none;
+}
+.registry-link, .cart-link {
+    text-decoration: none;
+    color: #fff;
+}
+.registry-link {
+    margin: 0 33px;
+}
+.offer {
+    background: #F1E4E6;
+}
+.offer-wrap {
+    height: 765px;
+    background-image: url(../img/promo-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: -225px;
+    background-position-y: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.offer-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 40px;
+    color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-right: 90px;
+}
+.offer-title--small {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+.offer-title--pink {
+    color: #F16D7F;
+}
+.categories {
+    padding-top: 65px;
+    padding-bottom: 96px;
+    background: #F8F8F8;
+}
+.categories-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categories-item {
+    background-color: #F8F8F8;
+    width: 360px;
+    height: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.categories-item--women {
+    background-image: url(../img/cat-woman.png);
+}
+.categories-item--men {
+    background-image: url(../img/cat-man.png);
+}
+.categories-item--kids{
+    background-image: url(../img/cat-kids.png);
+}
+.categories-item--acc {
+    margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    background-image: url(../img/cat-accesories.png);
+}
+.categories-sale {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.categories-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+.feature-products {
+    background: #F8F8F8;
+    height: 1395px;
+}
+/* .feature-products-wrap {
+    
+} */
+.feature-products-heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.feature-products-paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.feature-products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.feature-products-list-4, .feature-products-list-5, .feature-products-list-6 {
+    margin-top: 30px;
+}
+.feature-products-list-item {
+    width: 360px;
+    height: 581px;
+    background: #E5E5E5;
+}
+.feature-products-image {
+    width: 100%;
+    height: 420px;
+}
+.bottom-card {
+    margin: 25px 18px auto 18px;
+}
+.footer-card-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.footer-card-description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-top: 12.5px;
+    padding-bottom: 18px;
+}
+.footer-card-price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+
+}
+.center {
+    margin-top: 48.5px;
+    display: flex;
+    justify-content: center;
+}
+.bap {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding: 14.5px 38.5px 13.5px 38.5px;
+    border: 1px solid #FF6A6A;
+}
+.advantages {
+    background: #222224;
+    height: 341px;
+    margin-top: 95.5px;
+}
+.feedback {
+    /* background: url(Layer 41.png); */
+    height: 448px;
+}
+.footer {
+    background: #222224;
+    padding: 24px 0;
+    color: #fff;
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
