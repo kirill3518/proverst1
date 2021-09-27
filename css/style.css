@@ -16,7 +16,7 @@ body {
 .wrapper {
     width: 1140px;
     margin: 0 auto;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 .header {
     background: #222222;
@@ -166,10 +166,45 @@ body {
     width: 360px;
     height: 581px;
     background: #E5E5E5;
+    position: relative;
+}
+.feature-products-list-item:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
 }
 .feature-products-image {
     width: 100%;
     height: 420px;
+}
+.feature-products-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.feature-products-overlay-cart {
+    padding: 7px 9px;
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+}
+.atc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.feature-products-list-item:hover .feature-products-overlay {
+    opacity: 1;
 }
 .bottom-card {
     margin: 25px 18px auto 18px;
@@ -209,17 +244,131 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    text-decoration: none;
     padding: 14.5px 38.5px 13.5px 38.5px;
     border: 1px solid #FF6A6A;
 }
+.bap:hover {
+    background-color: #F26376;
+    color: #ffffff;
+}
 .advantages {
     background: #222224;
-    height: 341px;
     margin-top: 95.5px;
+    border: 1px solid transparent;
+}
+.advantages-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 103px auto;
+}
+.advantages-item {
+    width: 360px;
+    text-align: center;
+}
+.advantages-image-delivery {
+    width: 45px;
+    height: 32px;
+}
+.advantages-image-sales {
+    width: 40px;
+    height: 40px;
+}
+.advantages-image-quality {
+    width: 47px;
+    height: 35px;
+}
+.advantages-benefits {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 19px auto 16px auto;
+}
+.advantages-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
 }
 .feedback {
-    /* background: url(Layer 41.png); */
-    height: 448px;
+    background-color: #eee;
+    background-image: url(../img/feedback-background.png);
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 448px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feedback-item {
+    width: 359.5px;
+    border: 1px solid transparent;
+    text-align: center;
+}
+.feedback-subscription-4 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+}
+.feedback-subscription-5 {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+}
+.feedback-form {
+    width: 356px;
+    display: flex;
+    margin-top: 32px;
+}
+.feedback-form--email {
+    padding: 20px;
+    width: 255px;
+    border-radius: 27px 0px 0px 27px;
+    border: none;
+    background-color: #E1E1E1;
+    color: #222224;
+}
+.feedback-form--email::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+}
+.feedback-form--email:hover {
+    background-color: #E9E9E9;
+}
+.feedback-form--submit {
+    padding: 20px;
+    border-radius: 0px 27px 27px 0px;
+    border: none;
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+.feedback-form--submit:hover {
+    background-color: #c34455;
+}
+.feedback-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin: 30px auto;
 }
 .footer {
     background: #222224;
@@ -230,4 +379,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.facebook-link {
+    text-decoration: none;
+}
+.instagram-link, .polkadot-link, .twitter-link {
+    text-decoration: none;
+    margin-left: 7px;
+}
+.facebook-link:hover {
+    content: url(../img/facebook-hover-mouse.svg);
+}
+.instagram-link:hover {
+    content: url(../img/instagram-hover-mouse.svg);
+}
+.polkadot-link:hover {
+    content: url(../img/polkadot-hover-mouse.svg);
+}
+.twitter-link:hover {
+    content: url(../img/twitter-hover-mouse.svg);
 }
