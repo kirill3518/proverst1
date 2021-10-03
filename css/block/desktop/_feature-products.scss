@@ -1,0 +1,193 @@
+// feature-products
+.feature-products {
+    background: $color-6;
+    &-heading {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        color: $color-1;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    &-paragraph {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-8;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    &-list-4, &-list-5, &-list-6, &-list-7, &-list-8, &-list-9 {
+        margin-top: $feature-products-list-margin-top;
+    }
+}
+.center {
+    margin-top: 48.5px;
+    display: flex;
+    justify-content: center;
+}
+.bap {
+    @include categories-sale__footer-text ();
+    color: $color-5;
+    text-decoration: none;
+    padding: 14.5px 38.5px 13.5px 38.5px;
+    border: 1px solid $color-13;
+    &:hover {
+        background-color: $color-14;
+        color: $color-7;
+    }
+}
+// .feature-products-wrap {
+    
+// } 
+.feature-products-list-item {
+    width: 360px;
+    height: 581px;
+    background: $color-9;
+    position: relative;
+    &:hover {
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.feature-products-image {
+    width: 100%;
+    height: 420px;
+}
+.feature-products-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: $color-10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    &-button {
+        padding: 10.8px 13px;
+        border: 1px solid $color-7;
+        background-color: $color-3;
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-7;
+        &-image {
+            padding-right: 11px;
+        }
+    }
+}
+.feature-products-list-item:hover .feature-products-overlay {
+    opacity: 1;
+}
+// Передалать ОТ СЮДА
+.feature-products-filter-and-sorting {
+    display: flex;
+    padding: 51px 0 64px 0;
+}
+.feature-products-filter {
+    width: 360px;
+    &-paragraph {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-11;
+        border: 1px solid $color-3;
+        background-color: $color-3;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+    }
+    &-image {
+        padding-left: 11px;
+    }
+}
+.feature-products-sorting {
+    width: 360px;
+    margin-left: 32px;
+    &-paragraph {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-23;
+        border: 1px solid $color-3;
+        background-color: $color-3;
+    }
+}
+
+.feature-products-margin-right {
+    margin-right: 28px;
+}
+// Переделать ДО СЮДА
+.feature-products-pagination {
+    padding-top: 48.5px;
+    display: flex;
+    justify-content: center;
+    &-border {
+        border: 1px solid $color-24;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+}
+.pagination-href {
+    color: $color-25;
+    float: left;
+    padding: 13px 12px;
+    text-decoration: none;
+    transition: background-color $color-26;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    &:hover:not(.active) {
+        background-color: $color-28;
+    }
+    &-margin1 {
+        padding-right: 0;
+    }
+    &-margin2 {
+        padding-left: 0;
+    }
+}
+.href-1 {
+    color: $color-27 !important;
+}
+.bottom-card {
+    margin: 25px 18px auto 18px;
+}
+.footer-card-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-11;
+}
+.footer-card-description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-12;
+    padding-top: 12.5px;
+    padding-bottom: 18px;
+}
+.footer-card-price {
+    @include categories-sale__footer-text ();
+    color: $color-5;
+}
