@@ -1,0 +1,43 @@
+.slider {
+	background-color: #F7F7F7;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: $shift;
+	border-bottom: 1px solid #EAEAEA;
+		&-img {
+			border: none;
+		}
+		&-btn {
+		background-color: grey;
+		color: #fff;
+		padding: 10px;
+		border: 1px solid #000;
+		transition: 0.2s;
+			&:hover {
+				color: pink;
+				border-color: pink;
+				background-color: lightgray;
+			}
+			&:active {
+				background-color: #000;
+			}
+			&-left {
+				left: 5px;
+				&-img {
+					&:hover {
+						content: url(../img/slider-btn-left-pink.svg);
+					}
+				}
+			}
+			&-right {
+				right: 5px;
+				&-img {
+					&:hover {
+						content: url(../img/slider-btn-right-pink.svg);
+					}
+				}
+			}
+	}
+}

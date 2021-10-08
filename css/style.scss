@@ -27,23 +27,30 @@ body {
     // outline: 1px solid red;
 }
 // Главная страница
-// Шапка
-@import "block/desktop/_header.scss";
-// Оффер
-@import "block/desktop/_offer.scss";
-// Категории
-@import "block/desktop/_categories.scss";
+// header
+@import "block/_header.scss";
+// offer
+@import "block/_offer.scss";
+// categories
+@import "block/_categories.scss";
 // feature-products
-@import "block/desktop/_feature-products.scss";
+@import "block/_feature-products.scss";
 // advantages
-@import "block/desktop/_advantages.scss";
+@import "block/_advantages.scss";
 // feedback
-@import "block/desktop/_feedback.scss";
+@import "block/_feedback.scss";
 // footer
-@import "block/desktop/_footer.scss";
+@import "block/_footer.scss";
 // Страница каталога
 // new-arrivals
-@import "block/desktop/_new-arrivals.scss";
+@import "block/_new-arrivals.scss";
+// Страница продукта
+// slider
+@import "block/_slider.scss";
+// about
+@import "block/_about.scss";
+// feature-products-padding
+@import "block/_feature-products-padding.scss";
 // Страница регистрации
 // registration-block
-@import "block/desktop/_registration-block.scss";
+@import "block/_registration-block.scss";

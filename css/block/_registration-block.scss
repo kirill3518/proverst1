@@ -1,0 +1,157 @@
+.registration-block {
+    background: $color-29;
+    &-wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: 1px solid transparent;
+        margin: 64px auto 96px auto;
+    }
+    &-form {
+        width: 360px;
+        background: $color-30;
+        &-fieldset {
+            border: none;
+            &-legend {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+            &-text {
+                @keyframes change-color {
+                    0% {
+                        box-shadow: 0 0 5px #FF0000;
+                    }
+                    7% {
+                        box-shadow: 0 0 5px #FF8000;
+                    }
+                    14% {
+                        box-shadow: 0 0 5px #FFFF00;
+                    }
+                    21% {
+                        box-shadow: 0 0 5px #80FF00;
+                    }
+                    28% {
+                        box-shadow: 0 0 5px #00FF00;
+                    }
+                    35% {
+                        box-shadow: 0 0 5px #00FF80;
+                    }
+                    42% {
+                        box-shadow: 0 0 5px #00FFFF;
+                    }
+                    49% {
+                        box-shadow: 0 0 5px #0080FF;
+                    }
+                    56% {
+                        box-shadow: 0 0 5px #0000FF;
+                    }
+                    63% {
+                        box-shadow: 0 0 5px #8000FF;
+                    }
+                    70% {
+                        box-shadow: 0 0 5px #FF00FF;
+                    }
+                    77% {
+                        box-shadow: 0 0 5px #FF0080;
+                    }
+                    84% {
+                        box-shadow: 0 0 5px #B2D732;
+                    }
+                    91% {
+                        box-shadow: 0 0 5px #66B032;
+                    }
+                }
+                &:hover {
+                    animation: change-color 10s infinite;
+                }
+                border: 1px solid #A4A4A4;
+                padding: 17px;
+                width: 100%;
+                height: 45px;
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #B1B1B1;
+                }
+            }
+            &-text-margin-top {
+                margin-top: 20px;
+            }
+            &-container {
+                padding: 31px 0 33px 0;
+                &-label {
+                    padding-right: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #000000;
+                }
+                &-label input {
+                    margin-right: 10px;
+                }
+            }
+            &-paragraph {
+                margin: 15px auto 39px auto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+        &-button {
+            background-color: $color-31;
+            border: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 16px 29px 16px 29px;
+            transition: 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &-img {
+                padding-left: 20px;
+            }
+        }
+    }
+    &-info {
+        max-width: 652px;
+        &-heading {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;            
+        }
+        &-paragraph {
+            padding: 22px 0;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        &-list {
+            &-number {
+                list-style: none;
+                background: url(../img/registration-block-info-list-check-mark.svg) no-repeat 0 6.5px;
+                padding-left: 43px;
+                padding-bottom: 16px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+        }
+    }
+}

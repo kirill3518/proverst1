@@ -1,0 +1,45 @@
+// advantages
+.advantages {
+    background: $color-15;
+    border: 1px solid $color-3;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 103px auto;
+    }
+    &-item {
+        width: 360px;
+        text-align: center;
+        transition: 0.2s;
+        &:hover {
+            transform: rotateY(360deg);
+        }
+    }
+    &-image-delivery {
+        width: 45px;
+        height: 32px;
+    }
+    &-image-sales {
+        width: 40px;
+        height: 40px;
+    }
+    &-image-quality {
+        width: 47px;
+        height: 35px;
+    }
+    &-benefits {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: $color-16;
+        margin: 19px auto 16px auto;
+    }
+    &-text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        color: $color-16;
+    }
+}

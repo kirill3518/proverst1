@@ -1,0 +1,28 @@
+// Шапка
+.header {
+    background: $color-1;
+    // height: 75px;
+    padding: 18px 0;
+    color: $color-2;
+    &-wrap {
+        @include admixture-wrap ();
+    }
+    &-col-1 {
+        display: flex;
+        align-items: center;
+    }
+}
+.logo-link {
+    @include link ();
+    margin-right: 41px;
+}
+.search-button, .main-menu-button {
+    background-color: $color-3;
+    border: none;
+}
+.registry-link, .cart-link {
+    @include link ();
+}
+.registry-link {
+    margin: 0 33px;
+}

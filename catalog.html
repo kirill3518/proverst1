@@ -51,27 +51,142 @@
     <section class="feature-products">
         <div class="wrapper feature-products-wrap">
             <div class="feature-products-filter-and-sorting">
-                <div class="feature-products-filter">
-                    <!-- Содержимое блока с классом "feature-products-filter" нужно переделать позднее -->
-                    <button type="submit" class="feature-products-filter-paragraph">
-                        FILTER<img src="img/feature-products-filter.svg" alt="filter"
-                            class="feature-products-filter-image">
-                    </button>
-                </div>
+                <details open class="feature-products-filter">
+                    <summary class="feature-products-filter-summary">FILTER</summary>
+                    <div class="feature-products-filter-content">
+                        <details open class="feature-products-filter-category">
+                            <summary class="feature-products-filter-category-summary">CATEGORY</summary>
+                            <ul class="feature-products-filter-category-summary-ul">
+                                <li class="feature-products-filter-category-summary-ul-li">Accessories</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Bags</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Denim</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Hoodies & Sweatshirts</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Jackets & Coats</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Polos</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Shirts</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Shoes</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Sweaters & Knits</li>
+                                <li class="feature-products-filter-category-summary-ul-li">T-Shirts</li>
+                                <li>Tanks</li>
+                            </ul>
+                        </details>
+                        <details class="feature-products-filter-category feature-products-filter-margin-bottom">
+                            <summary class="feature-products-filter-category-summary">BRAND</summary>
+                            <ul class="feature-products-filter-category-summary-ul">
+                                <li class="feature-products-filter-category-summary-ul-li">Accessories</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Bags</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Denim</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Hoodies & Sweatshirts</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Jackets & Coats</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Polos</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Shirts</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Shoes</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Sweaters & Knits</li>
+                                <li class="feature-products-filter-category-summary-ul-li">T-Shirts</li>
+                                <li>Tanks</li>
+                            </ul>
+                        </details>
+                        <details class="feature-products-filter-category">
+                            <summary class="feature-products-filter-category-summary">DESIGNER</summary>
+                            <ul class="feature-products-filter-category-summary-ul">
+                                <li class="feature-products-filter-category-summary-ul-li">Accessories</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Bags</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Denim</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Hoodies & Sweatshirts</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Jackets & Coats</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Polos</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Shirts</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Shoes</li>
+                                <li class="feature-products-filter-category-summary-ul-li">Sweaters & Knits</li>
+                                <li class="feature-products-filter-category-summary-ul-li">T-Shirts</li>
+                                <li>Tanks</li>
+                            </ul>
+                        </details>
+                    </div>
+                </details>
                 <div class="feature-products-sorting">
-                    <!-- Содержимое блока с классом "feature-products-sorting" нужно переделать позднее -->
-                    <button type="submit" class="feature-products-sorting-paragraph feature-products-margin-right">
-                        TRENDING NOW<img src="img/feature-products-sorting.svg" alt="sorting"
-                            class="feature-products-filter-image">
-                    </button>
-                    <button type="submit" class="feature-products-sorting-paragraph feature-products-margin-right">
-                        SIZE<img src="img/feature-products-sorting.svg" alt="sorting"
-                            class="feature-products-filter-image">
-                    </button>
-                    <button type="submit" class="feature-products-sorting-paragraph">
-                        PRICE<img src="img/feature-products-sorting.svg" alt="sorting"
-                            class="feature-products-filter-image">
-                    </button>
+                    <details class="feature-products-sorting-trending-now feature-products-sorting-margin-right" open>
+                        <summary class="feature-products-sorting-trending-now-name">TRENDING NOW</summary>
+                        <div class="feature-products-sorting-trending-now-box">
+                            <label
+                                class="feature-products-sorting-trending-now-box-label feature-products-sorting-trending-now-box-label-padding-bottom"><input
+                                    type="checkbox" name="trending-now" value="for-women"
+                                    class="feature-products-sorting-trending-now-box-checkbox">FOR WOMEN</label>
+                            <label
+                                class="feature-products-sorting-trending-now-box-label feature-products-sorting-trending-now-box-label-padding-bottom"><input
+                                    type="checkbox" name="trending-now" value="for-men"
+                                    class="feature-products-sorting-trending-now-box-checkbox">FOR MEN</label>
+                            <label
+                                class="feature-products-sorting-trending-now-box-label feature-products-sorting-trending-now-box-label-padding-bottom"><input
+                                    type="checkbox" name="trending-now" value="for-kids"
+                                    class="feature-products-sorting-trending-now-box-checkbox">FOR KIDS</label>
+                            <label class="feature-products-sorting-trending-now-box-label"><input type="checkbox"
+                                    name="trending-now" value="accessories"
+                                    class="feature-products-sorting-trending-now-box-checkbox">ACCESORIES</label>
+                        </div>
+                    </details>
+                    <details class="feature-products-sorting-size feature-products-sorting-margin-right" open>
+                        <summary class="feature-products-sorting-size-name">SIZE</summary>
+                        <div class="feature-products-sorting-size-box">
+                            <label
+                                class="feature-products-sorting-size-box-label feature-products-sorting-size-box-label-padding-bottom"><input
+                                    type="checkbox" name="size" value="xs"
+                                    class="feature-products-sorting-size-box-checkbox">XS</label>
+                            <label
+                                class="feature-products-sorting-size-box-label feature-products-sorting-size-box-label-padding-bottom"><input
+                                    type="checkbox" name="size" value="s"
+                                    class="feature-products-sorting-size-box-checkbox">S</label>
+                            <label
+                                class="feature-products-sorting-size-box-label feature-products-sorting-size-box-label-padding-bottom"><input
+                                    type="checkbox" name="size" value="m"
+                                    class="feature-products-sorting-size-box-checkbox">M</label>
+                            <label class="feature-products-sorting-size-box-label"><input type="checkbox" name="size"
+                                    value="l" class="feature-products-sorting-size-box-checkbox">L</label>
+                        </div>
+                    </details>
+                    <details class="feature-products-sorting-price" open>
+                        <summary class="feature-products-sorting-price-name">PRICE</summary>
+                        <div class="feature-products-sorting-price-box">
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="50"
+                                    class="feature-products-sorting-price-box-checkbox">50</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="100"
+                                    class="feature-products-sorting-price-box-checkbox">100</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="150"
+                                    class="feature-products-sorting-price-box-checkbox">150</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="200"
+                                    class="feature-products-sorting-price-box-checkbox">200</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="250"
+                                    class="feature-products-sorting-price-box-checkbox">250</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="300"
+                                    class="feature-products-sorting-price-box-checkbox">300</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="350"
+                                    class="feature-products-sorting-price-box-checkbox">350</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="400"
+                                    class="feature-products-sorting-price-box-checkbox">400</label>
+                            <label
+                                class="feature-products-sorting-price-box-label feature-products-sorting-price-box-label-padding-bottom"><input
+                                    type="checkbox" name="price" value="450"
+                                    class="feature-products-sorting-price-box-checkbox">450</label>
+                            <label class="feature-products-sorting-price-box-label"><input type="checkbox" name="price"
+                                    value="500" class="feature-products-sorting-price-box-checkbox">500</label>
+                        </div>
+                    </details>
                 </div>
             </div>
             <ul class="feature-products-cards">
@@ -81,7 +196,8 @@
                     </video>
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -95,7 +211,8 @@
                     <img src="img/product-7.png" alt="product-2" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -109,7 +226,8 @@
                     <img src="img/product-3.png" alt="product-3" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -123,7 +241,8 @@
                     <img src="img/product-4.png" alt="product-4" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -137,7 +256,8 @@
                     <img src="img/product-8.png" alt="product-5" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -151,7 +271,8 @@
                     <img src="img/product-9.png" alt="product-6" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -165,7 +286,8 @@
                     <img src="img/product-10.png" alt="product-7" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -179,7 +301,8 @@
                     <img src="img/product-11.png" alt="product-8" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -193,7 +316,8 @@
                     <img src="img/product-12.png" alt="product-9" class="feature-products-image">
                     <div class="feature-products-overlay">
                         <button type="submit" class="feature-products-overlay-button">
-                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to cart
+                            <img src="img/cart.svg" alt="cart" class="feature-products-overlay-button-image">Add to
+                            cart
                         </button>
                     </div>
                     <div class="bottom-card">
@@ -217,8 +341,8 @@
                     <li class="breadcrumb-item"><a href="#" class="pagination-href">5</a></li>
                     <li class="breadcrumb-item"><a href="#"
                             class="pagination-href pagination-href-margin1">6<span>.....</span></a></li>
+                    <li class="breadcrumb-item"><a href="#" class="pagination-href pagination-href-margin2">20</a>
                     </li>
-                    <li class="breadcrumb-item"><a href="#" class="pagination-href pagination-href-margin2">20</a></li>
                     <li class="breadcrumb-item"><a href="#" class="pagination-href"><img
                                 src="img/arrow-right-pagination.svg" alt="right"></a></li>
                 </ol>
@@ -272,7 +396,7 @@
     <footer class="footer">
         <div class="wrapper footer-wrap">
             <div class="footer-col-1">
-                <p class="footer-text">© 2021 Brand All Rights Reserved.</p>
+                <p class="footer-text">&copy; 2021 Brand All Rights Reserved.</p>
             </div>
             <div class="footer-col-2">
                 <a href="#" class="facebook-link">
