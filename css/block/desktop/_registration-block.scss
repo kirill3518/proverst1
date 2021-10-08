@@ -1,0 +1,106 @@
+.registration-block {
+    background: $color-29;
+    &-wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        border: 1px solid transparent;
+        margin: 64px auto 96px auto;
+    }
+    &-form {
+        width: 360px;
+        background: $color-30;
+        &-fieldset {
+            border: none;
+            &-legend {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+            &-text {
+                border: 1px solid #A4A4A4;
+                padding: 17px;
+                width: 100%;
+                height: 45px;
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #B1B1B1;
+                }
+            }
+            &-text-margin-top {
+                margin-top: 20px;
+            }
+            &-container {
+                padding: 31px 0 33px 0;
+                &-label {
+                    padding-right: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #000000;
+                }
+                &-label input {
+                    margin-right: 10px;
+                }
+            }
+            &-paragraph {
+                margin: 15px auto 39px auto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+        &-button {
+            background-color: $color-31;
+            border: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding: 16px 29px 16px 29px;
+            &-img {
+                padding-left: 20px;
+            }
+        }
+    }
+    &-info {
+        max-width: 652px;
+        &-heading {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;            
+        }
+        &-paragraph {
+            padding: 22px 0;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        &-list {
+            &-number {
+                list-style: none;
+                background: url(../img/registration-block-info-list-check-mark.svg) no-repeat 0 6.5px;
+                padding-left: 43px;
+                padding-bottom: 16px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+// Переменные: цвет/фон, отступы
+// Цвет/Фон
+@import "_vars.scss";
+// Отступы
+$feature-products-list-margin-top: 30px;
+// Примеси
+@import "_mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.hidden {
+    position: absolute;
+    left: -99999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    // outline: 1px solid red;
+}
+// Главная страница
+// Шапка
+@import "block/desktop/_header.scss";
+// Оффер
+@import "block/desktop/_offer.scss";
+// Категории
+@import "block/desktop/_categories.scss";
+// feature-products
+@import "block/desktop/_feature-products.scss";
+// advantages
+@import "block/desktop/_advantages.scss";
+// feedback
+@import "block/desktop/_feedback.scss";
+// footer
+@import "block/desktop/_footer.scss";
+// Страница каталога
+// new-arrivals
+@import "block/desktop/_new-arrivals.scss";
+// Страница регистрации
+// registration-block
+@import "block/desktop/_registration-block.scss";

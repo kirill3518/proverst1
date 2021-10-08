@@ -1,0 +1,32 @@
+// Оффер
+.offer {
+    background: $color-4;
+    &-wrap {
+        height: 765px;
+        background-image: url(../img/promo-bg.png);
+        background-repeat: no-repeat;
+        background-position-x: -225px;
+        background-position-y: bottom;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &-title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 40px;
+        color: $color-1;
+        border-left: 12px solid $color-5;
+        padding-left: 16px;
+        margin-right: 90px;
+        &--small {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 38px;
+            color: $color-1;
+        }
+        &--pink {
+            color: $color-5;
+        }
+    }
+}
