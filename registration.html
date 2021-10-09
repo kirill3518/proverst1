@@ -48,25 +48,25 @@
             <form action="#" class="registration-block-form">
                 <fieldset class="registration-block-form-fieldset">
                     <legend class="registration-block-form-fieldset-legend">Your Name</legend>
-                    <input type="text"
+                    <input required type="text"
                         class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
                         placeholder="First Name">
-                    <input type="text"
+                    <input required type="text"
                         class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
                         placeholder="Last Name">
                     <p class="registration-block-form-fieldset-container">
-                        <label class="registration-block-form-fieldset-container-label"><input type="radio"
-                                name="gender" value="w">Male</label>
-                        <label class="registration-block-form-fieldset-container-label"><input type="radio"
+                        <label class="registration-block-form-fieldset-container-label"><input type="radio" required
+                                checked name="gender" value="w">Male</label>
+                        <label class="registration-block-form-fieldset-container-label"><input type="radio" required
                                 name="gender" value="m">Female</label>
                     </p>
                 </fieldset>
                 <fieldset class="registration-block-form-fieldset">
                     <legend class="registration-block-form-fieldset-legend">Login details</legend>
-                    <input type="email"
+                    <input required type="email"
                         class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
                         placeholder="Email">
-                    <input type="password"
+                    <input required type="password"
                         class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
                         placeholder="Password">
                     <p class="registration-block-form-fieldset-paragraph">Please use 8 or more characters, with at least
@@ -105,7 +105,7 @@
                 <h4 class="feedback-subscription-4">SUBSCRIBE</h4>
                 <h5 class="feedback-subscription-5">FOR OUR NEWLETTER AND PROMOTION</h5>
                 <form action="#" class="feedback-form">
-                    <input type="email" placeholder="Enter Your Email" class="feedback-form--email">
+                    <input required type="email" placeholder="Enter Your Email" class="feedback-form--email">
                     <input type="submit" class="feedback-form--submit" value="Subscribe">
                 </form>
             </div>
