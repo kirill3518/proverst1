@@ -84,6 +84,7 @@
             }
             &-container {
                 padding: 31px 0 33px 0;
+                display: flex;
                 &-label {
                     padding-right: 20px;
                     font-style: normal;
@@ -91,6 +92,8 @@
                     font-size: 11px;
                     line-height: 13px;
                     color: #000000;
+                    display: flex;
+                    align-items: center;
                 }
                 &-label input {
                     margin-right: 10px;

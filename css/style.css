@@ -23,6 +23,7 @@ body {
 }
 
 .header {
+  position: relative;
   background: #222222;
   padding: 18px 0;
   color: #fff;
@@ -60,13 +61,118 @@ body {
   border: none;
 }
 
+.search-button:hover img {
+  content: url(../img/search-hover.svg);
+}
+
+.main-menu-button:hover img {
+  content: url(../img/burger-hover.svg);
+}
+
 .registry-link, .cart-link {
   text-decoration: none;
   color: #fff;
 }
 
+.cart-link:hover img {
+  content: url(../img/cart-hover.svg);
+}
+
 .registry-link {
   margin: 0 33px;
+}
+
+.registry-link:hover img {
+  content: url(../img/account-hover.svg);
+}
+
+.main-menu-float {
+  background-color: #FFFFFF;
+  width: 235px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 37px 34px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-height: 765px;
+}
+
+.main-menu-float-open {
+  display: block;
+}
+
+.main-menu-float-close {
+  display: none;
+}
+
+.main-menu-float-box {
+  position: relative;
+}
+
+.main-menu-float-close-btn {
+  position: absolute;
+  padding: 10px;
+  background-color: transparent;
+  top: -33px;
+  right: -31px;
+  border: transparent;
+}
+
+.main-menu-float-close-btn:hover img {
+  content: url(../img/close-menu-hover.svg);
+}
+
+.main-menu-float-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.main-menu-float-list {
+  list-style: none;
+}
+
+.main-menu-float-item {
+  margin-bottom: 20px;
+}
+
+.main-submenu-padding-bottom {
+  padding-bottom: 11px;
+}
+
+.main-submenu-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.main-submenu-link:hover {
+  text-decoration: underline;
+}
+
+.main-menu-float-link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  display: inline-block;
+}
+
+.main-menu-float-link:hover {
+  text-decoration: underline;
+}
+
+.main-submenu {
+  list-style: none;
+  padding-left: 21.5px;
 }
 
 .offer {
@@ -145,6 +251,7 @@ body {
           justify-content: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: relative;
 }
 
 .categories-item:hover {
@@ -169,6 +276,12 @@ body {
   width: 100%;
   height: 180px;
   background-image: url(../img/cat-accesories.png);
+}
+
+.categories-a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .categories-sale {
@@ -1350,6 +1463,326 @@ body {
   padding-bottom: 128px;
 }
 
+.shopping-cart-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shopping-cart-goods {
+  margin: 96px 0 128px 0;
+}
+
+.shopping-cart-goods-card-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 6px 15px 15px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 15px 15px rgba(0, 0, 0, 0.21);
+  position: relative;
+}
+
+.shopping-cart-goods-card-product-img {
+  border: transparent;
+}
+
+.shopping-cart-goods-card-product-information {
+  margin: 22px 97px 62px 31px;
+  width: 262px;
+}
+
+.shopping-cart-goods-card-product-information-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  padding-bottom: 42px;
+}
+
+.shopping-cart-goods-card-product-information-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.shopping-cart-goods-card-product-information-price-span {
+  color: #EF5B70;
+}
+
+.shopping-cart-goods-card-product-information-color {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.shopping-cart-goods-card-product-information-size {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.shopping-cart-goods-card-product-information-padding-bottom {
+  padding-bottom: 6px;
+}
+
+.shopping-cart-goods-card-product-information-form-paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.shopping-cart-goods-card-product-information-form-paragraph-number {
+  width: 43px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  margin-left: 24.5px;
+  padding-left: 15px;
+  border: 1px solid #EAEAEA;
+}
+
+.shopping-cart-goods-card-product-information-form-paragraph-number::-webkit-outer-spin-button, .shopping-cart-goods-card-product-information-form-paragraph-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shopping-cart-goods-card-product-button {
+  position: absolute;
+  padding: 10px;
+  background-color: transparent;
+  top: 17px;
+  right: 11px;
+  border: transparent;
+}
+
+.shopping-cart-goods-card-product-button:hover .shopping-cart-goods-card-product-button-img {
+  content: url(../img/close-card-hover.svg);
+}
+
+.shopping-cart-goods-margin-bottom {
+  margin-bottom: 40px;
+}
+
+.shopping-cart-goods-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+}
+
+.shopping-cart-goods-container-clear {
+  display: inline-block;
+  padding: 17px 40px;
+  text-decoration: none;
+  border: 1px solid #A4A4A4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.shopping-cart-goods-container-clear:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+}
+
+.shopping-cart-goods-container-continue {
+  display: inline-block;
+  padding: 17px 40px;
+  text-decoration: none;
+  border: 1px solid #A4A4A4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.shopping-cart-goods-container-continue:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+}
+
+.shopping-cart-shipping-address {
+  width: 360px;
+  margin-top: 113px;
+}
+
+.shopping-cart-shipping-address-form-fieldset {
+  border: none;
+}
+
+.shopping-cart-shipping-address-form-fieldset-legend {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.shopping-cart-shipping-address-form-fieldset-text {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  padding: 0 16.5px 0 16.5px;
+}
+
+.shopping-cart-shipping-address-form-fieldset-text::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.shopping-cart-shipping-address-form-fieldset-text:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.shopping-cart-shipping-address-form-fieldset-text::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.shopping-cart-shipping-address-form-fieldset-text::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.shopping-cart-shipping-address-form-fieldset-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.shopping-cart-shipping-address-form-submit {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid #A4A4A4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.shopping-cart-shipping-address-form-submit:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+}
+
+.shopping-cart-shipping-address-registration {
+  background-color: #F5F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 57.5px;
+}
+
+.shopping-cart-shipping-address-registration-paragraph-sub-total {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-align: right;
+  padding: 39px 34px 12px 0;
+}
+
+.shopping-cart-shipping-address-registration-paragraph-sub-total-900 {
+  padding-left: 25.5px;
+}
+
+.shopping-cart-shipping-address-registration-paragraph-grand-total {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-align: right;
+  padding: 0 37px 21px 0;
+}
+
+.shopping-cart-shipping-address-registration-paragraph-grand-total-900 {
+  font-weight: bold;
+  color: #F16D7F;
+  padding-left: 25.5px;
+}
+
+.shopping-cart-shipping-address-registration-hr {
+  background-color: #E2E2E2;
+  height: 1px;
+  border: 0;
+  width: 275px;
+  margin-bottom: 17px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.shopping-cart-shipping-address-registration-a {
+  padding: 15px 40px;
+  background-color: #F16D7F;
+  border: 1px solid #F16D7F;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 42px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.shopping-cart-shipping-address-registration-a:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+}
+
 .registration-block {
   background: #FFFFFF;
 }
@@ -1553,6 +1986,9 @@ body {
 
 .registration-block-form-fieldset-container {
   padding: 31px 0 33px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .registration-block-form-fieldset-container-label {
@@ -1562,6 +1998,12 @@ body {
   font-size: 11px;
   line-height: 13px;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .registration-block-form-fieldset-container-label input {

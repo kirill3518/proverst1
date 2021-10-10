@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,57 +94,90 @@
     </header>
     <section class="new-arrivals">
         <div class="wrapper new-arrivals-wrap">
-            <h4 class="new-arrivals-heading">REGISTRATION</h4>
+            <h4 class="new-arrivals-heading">SHOPPING CART</h4>
         </div>
     </section>
-    <section class="registration-block">
-        <h2 class="hidden">Регистрация в программе лояльности</h2>
-        <div class="wrapper registration-block-wrap">
-            <form action="#" class="registration-block-form">
-                <fieldset class="registration-block-form-fieldset">
-                    <legend class="registration-block-form-fieldset-legend">Your Name</legend>
-                    <input required type="text"
-                        class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
-                        placeholder="First Name">
-                    <input required type="text"
-                        class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
-                        placeholder="Last Name">
-                    <p class="registration-block-form-fieldset-container">
-                        <label class="registration-block-form-fieldset-container-label"><input type="radio" required
-                                checked name="gender" value="w">Male</label>
-                        <label class="registration-block-form-fieldset-container-label"><input type="radio" required
-                                name="gender" value="m">Female</label>
+    <section class="shopping-cart">
+        <h2 class="hidden">Корзина покупателя</h2>
+        <div class="wrapper shopping-cart-wrap">
+            <div class="shopping-cart-goods">
+                <div class="shopping-cart-goods-card-product shopping-cart-goods-margin-bottom">
+                    <img src="img/shopping-cart-goods-1.png" alt="goods-1" class="shopping-cart-goods-card-product-img">
+                    <div class="shopping-cart-goods-card-product-information">
+                        <h4 class="shopping-cart-goods-card-product-information-heading">MANGO PEOPLE<br> T-SHIRT</h4>
+                        <p
+                            class="shopping-cart-goods-card-product-information-price shopping-cart-goods-card-product-information-padding-bottom">
+                            Price: <span class="shopping-cart-goods-card-product-information-price-span">$300</span></p>
+                        <p
+                            class="shopping-cart-goods-card-product-information-color shopping-cart-goods-card-product-information-padding-bottom">
+                            Color: Red</p>
+                        <p
+                            class="shopping-cart-goods-card-product-information-size shopping-cart-goods-card-product-information-padding-bottom">
+                            Size: Xl</p>
+                        <form action="#" class="shopping-cart-goods-card-product-information-form">
+                            <p class="shopping-cart-goods-card-product-information-form-paragraph">Quantity: <input
+                                    type="number"
+                                    class="shopping-cart-goods-card-product-information-form-paragraph-number">
+                            </p>
+                        </form>
+                    </div>
+                    <button class="shopping-cart-goods-card-product-button">
+                        <img src="img/close-card.svg" alt="close" class="shopping-cart-goods-card-product-button-img">
+                    </button>
+                </div>
+                <div class="shopping-cart-goods-card-product">
+                    <img src="img/shopping-cart-goods-2.png" alt="goods-1" class="shopping-cart-goods-card-product-img">
+                    <div class="shopping-cart-goods-card-product-information">
+                        <h4 class="shopping-cart-goods-card-product-information-heading">MANGO PEOPLE<br> T-SHIRT</h4>
+                        <p
+                            class="shopping-cart-goods-card-product-information-price shopping-cart-goods-card-product-information-padding-bottom">
+                            Price: <span class="shopping-cart-goods-card-product-information-price-span">$300</span></p>
+                        <p
+                            class="shopping-cart-goods-card-product-information-color shopping-cart-goods-card-product-information-padding-bottom">
+                            Color: Red</p>
+                        <p
+                            class="shopping-cart-goods-card-product-information-size shopping-cart-goods-card-product-information-padding-bottom">
+                            Size: Xl</p>
+                        <form action="#" class="shopping-cart-goods-card-product-information-form">
+                            <p class="shopping-cart-goods-card-product-information-form-paragraph">Quantity: <input
+                                    type="number"
+                                    class="shopping-cart-goods-card-product-information-form-paragraph-number">
+                            </p>
+                        </form>
+                    </div>
+                    <button class="shopping-cart-goods-card-product-button">
+                        <img src="img/close-card.svg" alt="close" class="shopping-cart-goods-card-product-button-img">
+                    </button>
+                </div>
+                <div class="shopping-cart-goods-container">
+                    <a href="#" class="shopping-cart-goods-container-clear">CLEAR SHOPPING CART</a>
+                    <a href="#" class="shopping-cart-goods-container-continue">CONTINUE SHOPPING</a>
+                </div>
+            </div>
+            <div class="shopping-cart-shipping-address">
+                <form action="#" class="shopping-cart-shipping-address-form">
+                    <fieldset class="shopping-cart-shipping-address-form-fieldset">
+                        <legend
+                            class="shopping-cart-shipping-address-form-fieldset-legend shopping-cart-shipping-address-form-fieldset-margin-bottom">
+                            SHIPPING ADRESS</legend>
+                        <input required type="text" placeholder="Bangladesh"
+                            class="shopping-cart-shipping-address-form-fieldset-text shopping-cart-shipping-address-form-fieldset-margin-bottom">
+                        <input required type="text" placeholder="State"
+                            class="shopping-cart-shipping-address-form-fieldset-text shopping-cart-shipping-address-form-fieldset-margin-bottom">
+                        <input required type="text" placeholder="Postcode / Zip"
+                            class="shopping-cart-shipping-address-form-fieldset-text shopping-cart-shipping-address-form-fieldset-margin-bottom">
+                    </fieldset>
+                    <button type="submit" class="shopping-cart-shipping-address-form-submit">GET A QUOTE</button>
+                </form>
+                <div class="shopping-cart-shipping-address-registration">
+                    <p class="shopping-cart-shipping-address-registration-paragraph-sub-total">SUB TOTAL<span
+                            class="shopping-cart-shipping-address-registration-paragraph-sub-total-900">$900</span></p>
+                    <p class="shopping-cart-shipping-address-registration-paragraph-grand-total">GRAND TOTAL<span
+                            class="shopping-cart-shipping-address-registration-paragraph-grand-total-900">$900</span>
                     </p>
-                </fieldset>
-                <fieldset class="registration-block-form-fieldset">
-                    <legend class="registration-block-form-fieldset-legend">Login details</legend>
-                    <input required type="email"
-                        class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
-                        placeholder="Email">
-                    <input required type="password"
-                        class="registration-block-form-fieldset-text registration-block-form-fieldset-text-margin-top"
-                        placeholder="Password">
-                    <p class="registration-block-form-fieldset-paragraph">Please use 8 or more characters, with at least
-                        1 number and a mixture of uppercase and lowercase letters</p>
-                </fieldset>
-                <button type="submit" class="registration-block-form-button">JOIN NOW<img
-                        src="img/registration-form-button-arrow-right.svg" alt="arrow-right"
-                        class="registration-block-form-button-img"></button>
-            </form>
-            <div class="registration-block-info">
-                <h4 class="registration-block-info-heading">LOYALTY HAS ITS PERKS</h4>
-                <p class="registration-block-info-paragraph">Get in on the loyalty program where you can earn points
-                    and
-                    unlock serious perks. Starting with these as soon as you join:</p>
-                <ul class="registration-block-info-list">
-                    <li class="registration-block-info-list-number">15% off welcome offer</li>
-                    <li class="registration-block-info-list-number">Free shipping, returns and exchanges on all
-                        orders
-                    </li>
-                    <li class="registration-block-info-list-number">$10 off a purchase on your birthday</li>
-                    <li class="registration-block-info-list-number">Early access to products</li>
-                    <li class="registration-block-info-list-number">Exclusive offers & rewards</li>
-                </ul>
+                    <hr class="shopping-cart-shipping-address-registration-hr">
+                    <a href="#" class="shopping-cart-shipping-address-registration-a">PROCEED TO CHECKOUT</a>
+                </div>
             </div>
         </div>
     </section>

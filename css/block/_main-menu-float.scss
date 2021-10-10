@@ -1,0 +1,76 @@
+.main-menu-float {
+    background-color: #FFFFFF;
+    width: 235px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 34px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-height: 765px;
+}
+.main-menu-float-open {
+    display: block;
+}
+.main-menu-float-close {
+    display: none;
+}
+.main-menu-float-box {
+    position: relative;
+}
+.main-menu-float-close-btn {
+    position: absolute;
+    padding: 10px;
+    background-color: transparent;
+    top: -33px;
+    right: -31px;
+    border: transparent;
+    &:hover img {
+        content: url(../img/close-menu-hover.svg);
+    }
+}
+.main-menu-float-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+.main-menu-float-list {
+    list-style: none;
+}
+.main-menu-float-item {
+    margin-bottom: 20px;
+}
+// .main-submenu-item {
+    
+// }
+.main-submenu-padding-bottom {
+    padding-bottom: 11px;
+}
+.main-submenu-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.main-menu-float-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    display: inline-block;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.main-submenu {
+    list-style: none;
+    padding-left: 21.5px;
+}
