@@ -1,0 +1,42 @@
+// Шапка
+.header {
+    position: relative;
+    background: $color-1;
+    // height: 75px;
+    padding: 18px 0;
+    color: $color-2;
+    &-wrap {
+        @include admixture-wrap ();
+    }
+    &-col-1 {
+        display: flex;
+        align-items: center;
+    }
+}
+.logo-link {
+    @include link ();
+    margin-right: 41px;
+}
+.search-button, .main-menu-button {
+    background-color: $color-3;
+    border: none;
+}
+.search-button:hover img {
+    content: url(../img/search-hover.svg);
+}
+.main-menu-button:hover img {
+    content: url(../img/burger-hover.svg);
+}
+.registry-link, .cart-link {
+    @include link ();
+}
+.cart-link:hover img {
+    content: url(../img/cart-hover.svg);
+}
+.registry-link {
+    margin: 0 33px;
+}
+.registry-link:hover img {
+    content: url(../img/account-hover.svg);
+}
+@import "../block/_main-menu-float.scss";

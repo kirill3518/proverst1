@@ -1,0 +1,33 @@
+// footer
+.footer {
+    background: $color-15;
+    padding: 24px 0;
+    color: $color-2;
+    &-wrap {
+        @include admixture-wrap ();
+    }
+    &-text {
+        @include categories-sale__footer-text ();
+        color: $color-16;
+    }
+}
+.facebook-link {
+    text-decoration: none;
+    &:hover {
+        content: url(../img/facebook-hover-mouse.svg);
+    }
+}
+.instagram-link, .polkadot-link, .twitter-link {
+    text-decoration: none;
+    margin-left: 7px;
+}
+
+.instagram-link:hover {
+    content: url(../img/instagram-hover-mouse.svg);
+}
+.polkadot-link:hover {
+    content: url(../img/polkadot-hover-mouse.svg);
+}
+.twitter-link:hover {
+    content: url(../img/twitter-hover-mouse.svg);
+}
