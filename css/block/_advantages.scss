@@ -43,3 +43,34 @@
         color: $color-16;
     }
 }
+// Планшетная версия
+@media (max-width: 1200px) {
+    .advantages {
+        &-wrap {
+            flex-direction: column;
+            margin: 48px auto 64px auto;
+        }
+        &-item {
+            align-self: center;
+            &-tabblet-margin-top {
+                margin-top: 48.5px;
+            }
+        }
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .advantages {
+        &-wrap {
+            flex-direction: column;
+            margin: 48px auto 81px auto;
+        }
+        &-item {
+            width: 348px;
+            align-self: center;
+            &-margin-top {
+                margin-top: 47px;
+            }
+        }
+    }
+}

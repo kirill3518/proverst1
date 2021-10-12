@@ -31,3 +31,21 @@
 .twitter-link:hover {
     content: url(../img/twitter-hover-mouse.svg);
 }
+// Мобильная версия
+@media (max-width: 760px) {
+    .footer {
+        padding: 0 0;
+        &-wrap {
+            @include admixture-wrap-mobile ();
+        }
+        &-col-1 {
+            order: 2;
+            margin-bottom: 9px;
+        }
+        &-col-2 {
+            order: 1;
+            margin-top: 43px;
+            margin-bottom: 40px;
+        }
+    }
+}

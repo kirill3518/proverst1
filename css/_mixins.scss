@@ -4,6 +4,18 @@
     justify-content: space-between;
     align-items: center;
 }
+// Планшетная версия
+@mixin admixture-wrap-tabblet () {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+// Мобильная версия
+@mixin admixture-wrap-mobile () {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 @mixin link () {
     text-decoration: none;
     color: $color-2;

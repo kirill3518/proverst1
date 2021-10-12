@@ -76,3 +76,51 @@
         margin: 30px auto;
     }
 }
+// Планшетная версия
+@media (max-width: 1200px) {
+    .feedback {
+        background-image: url(../img/feedback-background-tabblet.png);
+        min-height: 614px;
+        padding: 55px 0 140px 0;
+        &-wrap {
+            @include admixture-wrap-tabblet ();
+        }
+        &-item {
+            &-margin-top {
+                margin-top: 48px;
+            }
+        }
+        &-form {
+            margin-top: 27px;
+        }
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .feedback {
+        background-image: url(../img/feedback-background-mobile.png);
+        min-height: 550px;
+        padding: 54px 0 110px 0;
+        &-wrap {
+            @include admixture-wrap-mobile ();
+        }
+        &-item {
+            &-margin-top {
+                margin-top: 59px;
+            }
+        }
+        &-form {
+            width: 341px;
+            margin-top: 22px;
+        }
+        &-subscription-4 {
+            line-height: 162%;
+        }
+        &-subscription-5 {
+            line-height: 162%;
+        }
+        &-text {
+            margin: 7px auto;
+        }
+    }
+}
