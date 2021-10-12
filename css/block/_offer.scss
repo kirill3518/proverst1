@@ -30,3 +30,41 @@
         }
     }
 }
+// Планшетная версия
+@media (max-width: 1200px) {
+    .offer {
+        &-wrap {
+            height: 367.5px;
+            background-image: url(../img/promo-bg-tabblet.png);
+            background-position-x: -17px;
+        }
+        &-title {
+            font-size: 44px;
+            line-height: 30px;
+            margin-right: 18px;
+            &--small {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .offer {
+        &-wrap {
+            height: 363px;
+            background-image: none;
+            justify-content: center;
+        }
+        &-title {
+            margin-right: 0;
+            font-size: 38px;
+            line-height: 25px;
+            &--small {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}

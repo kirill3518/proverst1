@@ -40,3 +40,16 @@
     content: url(../img/account-hover.svg);
 }
 @import "../block/_main-menu-float.scss";
+// Версия для смартфона
+@media (max-width: 760px) {
+    .header {
+        &-col-2 {
+            .registry-link {
+                display: none;
+            }
+            .cart-link {
+                display: none;
+            }
+        }
+    }
+}
