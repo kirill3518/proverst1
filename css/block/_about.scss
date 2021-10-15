@@ -241,3 +241,83 @@
         }
     }
 }
+// Планшетная версия
+@media (max-width: 1200px) {
+    .about {
+        &-wrap {
+            margin-top: 0;
+        }
+        &-container {
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid #EAEAEA;
+            border-left: none;
+        }
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .about {
+        &-top {
+            width: 326px;
+            &-paragraph-text {
+                padding: 32px 0 32px 0;
+            }
+        }
+        &-hr {
+            width: 174.5px;
+            margin: 32px auto 49.5px auto;
+        }
+        &-bottom {
+            &-sorting {
+                width: 294px;
+                padding-bottom: 64.5px;
+                &-margin-right {
+                    &:nth-of-type(1) {
+                        width: 101px;
+                    }
+                    &:nth-of-type(2) {
+                        width: 96px;
+                    }
+                    &:nth-of-type(3) {
+                        width: 83px;
+                        margin-right: 0;
+                    }
+                }
+                &-choose-color {
+                    &-name {
+                        font-size: 10px;
+                        line-height: 12px;
+                        padding-left: 0;
+                        text-align: right;
+                    }
+                    &-box {
+                        width: 101px;
+                    }
+                }
+                &-choose-size {
+                    &-name {
+                        font-size: 10px;
+                        line-height: 12px;
+                        padding-left: 0;
+                        text-align: right;
+                    }
+                    &-box {
+                        width: 96px;
+                    }
+                }
+                &-quantity {
+                    &-name {
+                        font-size: 10px;
+                        line-height: 12px;
+                        padding-left: 0;
+                        text-align: right;
+                    }
+                    &-box {
+                        width: 83px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -105,6 +105,7 @@
                 font-size: 14px;
                 line-height: 17px;
                 color: #000000;
+                text-transform: uppercase;
                 transition: 0.2s;
                 &:hover {
                     color: #FFFFFF;
@@ -121,6 +122,7 @@
                 font-size: 14px;
                 line-height: 17px;
                 color: #000000;
+                text-transform: uppercase;
                 transition: 0.2s;
                 &:hover {
                     color: #FFFFFF;
@@ -159,7 +161,6 @@
                     margin-bottom: 20px;
                 }
             }
-            
             &-submit {
                 padding: 10px 15px;
                 background-color: transparent;
@@ -169,6 +170,7 @@
                 font-size: 11px;
                 line-height: 13px;
                 color: #4A4A4A;
+                text-transform: uppercase;
                 transition: 0.2s;
                 &:hover {
                     color: #FFFFFF;
@@ -235,6 +237,134 @@
                     background-color: #FFFFFF;
                     color: #F16D7F;
                 }
+            }
+        }
+    }
+}
+// Планшетная версия
+@media (max-width: 1200px) {
+    .shopping-cart {
+        &-wrap {
+            justify-content: normal;
+            flex-direction: column;
+        }
+        &-goods {
+            margin: 59px 0 64.5px 0;
+            &-card-product {
+                &-information {
+                    margin-right: 179px;
+                }
+            }
+            &-container {
+                justify-content: center;
+                grid-column-gap: 49px;
+                margin-top: 62px;
+            }
+        }
+        &-shipping-address {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 128px;
+            &-form {
+                width: 359px;
+            }
+            &-registration {
+                width: 360px;
+                height: 214px;
+                margin-top: 39px;
+            }
+        }
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .shopping-cart {
+        &-goods {
+            margin: 39px 0 48.5px 0;
+            &-card-product {
+                margin-bottom: 32px;
+                box-shadow: (8px 8px 21px rgba(0, 0, 0, 0.13));
+                &-img {
+                    border: transparent;
+                    width: 144px;
+                    height: 200.5px;
+                }
+                &-information {
+                    margin: 13.5px 53px 38px 17px;
+                    width: 144px;
+                    &-heading {
+                        font-size: 16px;
+                        line-height: 19px;
+                        padding-bottom: 26px;
+                    }
+                    &-price {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    &-color {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    &-size {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    &-form {
+                        &-paragraph {
+                            font-size: 14px;
+                            line-height: 17px;
+                            &-number {
+                                font-size: 10px;
+                                line-height: 12px;
+                                width: 23.5px;
+                                margin-left: 15px;
+                                padding-left: 7.5px;
+                            }
+                        }
+                    }
+                }
+                &-button {
+                    padding: 5px;
+                    top: 8px;
+                    right: 9px;
+                    &-img {
+                        width: 10px;
+                        height: 11px;
+                    }
+                }
+            }
+            &-container {
+                grid-column-gap: 9px;
+                margin-top: 30.5px;
+                &-clear {
+                    padding: 9.5px 36px;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-align: center;
+                    text-transform: none;
+                }
+                &-continue {
+                    padding: 9.5px 36px;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-align: center;
+                    text-transform: none;
+                }
+            }
+        }
+        &-shipping-address {
+            display: block;
+            margin-bottom: 96px;
+            &-form {
+                width: 100%;
+            }
+            &-registration {
+                margin-top: 48.5px;
+                width: 100%;
             }
         }
     }
