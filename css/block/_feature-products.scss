@@ -36,8 +36,18 @@
         &-paragraph {
             margin-bottom: 72.5px;
         }
-        &-list-3, &-list-4, &-list-5, &-list-6, &-list-7, &-list-8 {
+        &-list-3, &-list-4, &-list-5, &-list-6, &-list-7, &-list-8, &-list-9 {
             margin-top: $feature-products-list-margin-top-media-tabblet;
+        }
+        &-list-product-swap:nth-of-type(1) {
+            order: 2;
+        }
+        &-list-product-swap:nth-of-type(2) {
+            order: 1;
+        }
+        &-list-product-swap:nth-of-type(3) {
+            order: 3;
+            display: none;
         }
     }
 }
@@ -49,6 +59,12 @@
         }
         &-list-2, &-list-3, &-list-4, &-list-5, &-list-6, &-list-7, &-list-8, &-list-9 {
             margin-top: $feature-products-list-margin-top-media-mobile;
+        }
+        &-list-product-swap:nth-of-type(2) {
+            display: none;
+        }
+        &-list-product-swap:nth-of-type(3) {
+            display: block;
         }
     }
 }
@@ -139,7 +155,21 @@
 // Передалать ОТ СЮДА
 .feature-products-filter-and-sorting {
     display: flex;
-    padding: 51px 0 64px 0;
+    padding: 38px 0 51px 0;
+}
+// Планшетная версия
+@media (max-width: 1200px) {
+    .feature-products-filter-and-sorting {
+        justify-content: space-between;
+        padding: 11px 0 27px 0;
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .feature-products-filter-and-sorting {
+        justify-content: space-between;
+        padding: 11px 0 14px 0;
+    }
 }
 .feature-products-filter {
     width: 360px;
@@ -208,6 +238,36 @@
     }
     &-margin-bottom {
         margin-bottom: 16px;
+    }
+}
+// Планшетная версия
+@media (max-width: 1200px) {
+    .feature-products-filter {
+        &-summary {
+            padding-left: 0;
+        }
+        &-category {
+            padding-left: 0;
+        }
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .feature-products-filter {
+        &-summary {
+            &-span {
+                display: none;
+            }
+            &::after {
+                content: url(../img/feature-products-filter-mobile.svg);
+                padding-left: 0;
+            }
+        }
+        &[open] > &-summary {
+            &::after {
+                content: url(../img/feature-products-filter-mobile-open.svg);
+            }
+        }
     }
 }
 .feature-products-sorting {
@@ -363,6 +423,66 @@
         margin-right: 7px;
     }
 }
+// Планшетная версия
+@media (max-width: 1200px) {
+    .feature-products-sorting {
+        width: 339px;
+        margin-left: 0;
+        &-trending-now {
+            &-name {
+                padding-left: 0;
+                text-align: right;
+            }
+        }
+        &-size {
+            &-name {
+                padding-left: 0;
+                text-align: right;
+            }
+        }
+        &-price {
+            &-name {
+                padding-left: 0;
+                text-align: right;
+            }
+        }
+    }
+}
+// Мобильная версия
+@media (max-width: 760px) {
+    .feature-products-sorting {
+        &-trending-now {
+            width: 130px;
+            &-box {
+                width: 130px;
+            }
+            &-name {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+        &-size {
+            width: 59px;
+            &-box {
+                width: 59px;
+            }
+            &-name {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+        &-price {
+            width: 72px;
+            &-box {
+                width: 72px;
+            }
+            &-name {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
 // Переднлать ДО СЮДА
 .feature-products-pagination {
     padding-top: 48.5px;
@@ -374,6 +494,15 @@
         display: flex;
         justify-content: center;
         margin-bottom: 95.5px;
+    }
+}
+// Планшетная версия
+@media (max-width: 1200px) {
+    .feature-products-pagination {
+        padding-top: 40.5px;
+        &-border {
+            margin-bottom: 63.5px;
+        }
     }
 }
 .pagination-href {

@@ -6,6 +6,9 @@
 	align-items: center;
 	padding-bottom: $shift;
 	border-bottom: 1px solid #EAEAEA;
+		&-box {
+			margin-top: 11px;
+		}
 		&-img {
 			border: none;
 		}
@@ -39,5 +42,31 @@
 					}
 				}
 			}
+	}
+}
+// Планшетная версия
+@media (max-width: 1200px) {
+	.slider {
+		padding-bottom: 29px;
+		&-box {
+			margin-top: 29px;
+		}
+		&-img {
+			width: 466px;
+			height: 565px;
+		}
+	}
+}
+// Мобильная версия
+@media (max-width: 760px) {
+	.slider {
+		padding-bottom: 85px;
+		&-box {
+			margin-top: 85px;
+		}
+		&-img {
+			width: 100%;
+			height: 454px;
+		}
 	}
 }

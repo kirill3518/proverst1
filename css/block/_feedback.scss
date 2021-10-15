@@ -33,7 +33,7 @@
         width: 356px;
         display: flex;
         margin-top: 32px;
-        &--email {
+        &-email {
             padding: 20px;
             width: 255px;
             border-radius: 27px 0px 0px 27px;
@@ -51,7 +51,7 @@
                 background-color: $color-19;
             }
         }
-        &--submit {
+        &-submit {
             padding: 20px;
             border-radius: 0px 27px 27px 0px;
             border: none;
@@ -112,6 +112,7 @@
         &-form {
             width: 341px;
             margin-top: 22px;
+            margin-left: 8.5px;
         }
         &-subscription-4 {
             line-height: 162%;

@@ -29,3 +29,20 @@
         color: $color-5;
     }
 }
+// Мобильная версия
+@media (max-width: 760px) {
+    .new-arrivals {
+        &-wrap {
+            @include admixture-wrap-mobile ();
+        }
+        &-heading {
+            padding: 24px 0 32px 0;
+            &-padding {
+                padding: 50px 0 69px 0;
+            }
+        }
+        .block-new-arrivals-href {
+            margin-bottom: 46px;
+        }
+    }
+}

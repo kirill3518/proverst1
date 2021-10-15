@@ -6,3 +6,14 @@
         padding-bottom: 128px;
     }
 }
+// Мобильная версия
+@media (max-width: 760px) {
+    .feature-products-padding {
+        &-top {
+            padding-top: 64px;
+        }
+        &-bottom {
+            padding-bottom: 64px;
+        }
+    }
+}
