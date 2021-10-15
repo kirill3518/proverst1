@@ -2480,6 +2480,9 @@ body {
   .shopping-cart-shipping-address-form {
     width: 100%;
   }
+  .shopping-cart-shipping-address-form-submit {
+    text-transform: none;
+  }
   .shopping-cart-shipping-address-registration {
     margin-top: 48.5px;
     width: 100%;

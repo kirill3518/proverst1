@@ -361,6 +361,9 @@
             margin-bottom: 96px;
             &-form {
                 width: 100%;
+                &-submit {
+                    text-transform: none;
+                }
             }
             &-registration {
                 margin-top: 48.5px;
