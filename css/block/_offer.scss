@@ -19,13 +19,13 @@
         border-left: 12px solid $color-5;
         padding-left: 16px;
         margin-right: 90px;
-        &--small {
+        &-small {
             font-weight: bold;
             font-size: 32px;
             line-height: 38px;
             color: $color-1;
         }
-        &--pink {
+        &-pink {
             color: $color-5;
         }
     }
@@ -42,7 +42,7 @@
             font-size: 44px;
             line-height: 30px;
             margin-right: 18px;
-            &--small {
+            &-small {
                 font-size: 24px;
                 line-height: 29px;
             }
@@ -61,7 +61,7 @@
             margin-right: 0;
             font-size: 38px;
             line-height: 25px;
-            &--small {
+            &-small {
                 font-size: 20px;
                 line-height: 24px;
             }

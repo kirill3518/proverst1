@@ -8,6 +8,9 @@ $feature-products-list-margin-top-media-mobile: 16px;
 // Примеси
 @import "_mixins.scss";
 
+html, body {
+    min-height: 100vh;
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +18,14 @@ $feature-products-list-margin-top-media-mobile: 16px;
 }
 body {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+section {
+    flex-grow: 1;
+}
+.feedback {
+    flex-grow: 0;
 }
 .hidden {
     position: absolute;
